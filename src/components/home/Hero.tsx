@@ -1,5 +1,5 @@
-import { ArrowRight } from 'lucide-react';
-import { ImageWithFallback } from '../figma/ImageWithFallback';
+import { ArrowRight } from "lucide-react";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 interface HeroProps {
   onExploreWork: () => void;
@@ -26,14 +26,20 @@ export function Hero({ onExploreWork }: HeroProps) {
             Cultivating Legacies that Stand the Test of Time.
           </h1>
           <p className="text-xl text-gray-200 mb-12 max-w-2xl mx-auto">
-            Redefining the landscape of architectural excellence through innovation and minimalist design.
+            Redefining the landscape of architectural excellence through
+            innovation and minimalist design.
           </p>
           <button
             onClick={onExploreWork}
             className="group relative inline-flex items-center gap-3 bg-[var(--color-copper)] text-white px-8 py-4 overflow-hidden"
           >
-            <span className="relative z-10 tracking-wide">Explore Our Work</span>
-            <ArrowRight size={20} className="relative z-10 transition-transform duration-150 group-hover:translate-x-1" />
+            <span className="relative z-10 tracking-wide">
+              Explore Our Work
+            </span>
+            <ArrowRight
+              size={20}
+              className="relative z-10 transition-transform duration-150 group-hover:translate-x-1"
+            />
             <span className="absolute inset-0 bg-[var(--color-bronze)] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-150 origin-left"></span>
           </button>
         </div>

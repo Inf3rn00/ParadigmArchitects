@@ -1,6 +1,4 @@
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
 import { Card, CardContent } from "./ui/card";
 
 export function Contact() {
@@ -60,27 +58,27 @@ export function Contact() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block mb-2">First Name</label>
-                  <Input id="firstName" placeholder="John" />
+                  <input id="firstName" placeholder="John" />
                 </div>
                 <div>
                   <label htmlFor="lastName" className="block mb-2">Last Name</label>
-                  <Input id="lastName" placeholder="Doe" />
+                  <input id="lastName" placeholder="Doe" />
                 </div>
               </div>
               
               <div>
                 <label htmlFor="email" className="block mb-2">Email</label>
-                <Input id="email" type="email" placeholder="john@example.com" />
+                <input id="email" type="email" placeholder="john@example.com" />
               </div>
               
               <div>
                 <label htmlFor="projectType" className="block mb-2">Project Type</label>
-                <Input id="projectType" placeholder="e.g., Residential, Commercial" />
+                <input id="projectType" placeholder="e.g., Residential, Commercial" />
               </div>
               
               <div>
                 <label htmlFor="message" className="block mb-2">Message</label>
-                <Textarea 
+                <textarea 
                   id="message" 
                   placeholder="Tell us about your project..."
                   className="h-32"

@@ -1,32 +1,32 @@
-import { useState, useEffect } from 'react';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
+import { useState, useEffect } from "react";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 // Home Page Components
-import { Hero } from './components/home/Hero';
-import { Philosophy } from './components/home/Philosophy';
-import { FeaturedWorks } from './components/home/FeaturedWorks';
-import { Mission } from './components/home/Mission';
-import { GlobalReach } from './components/home/GlobalReach';
+import { Hero } from "./components/home/Hero";
+import { Philosophy } from "./components/home/Philosophy";
+import { FeaturedWorks } from "./components/home/FeaturedWorks";
+import { Mission } from "./components/home/Mission";
+import { GlobalReach } from "./components/home/GlobalReach";
 
 // Portfolio Page Components
-import { PortfolioGrid } from './components/portfolio/PortfolioGrid';
+import { PortfolioGrid } from "./components/portfolio/PortfolioGrid";
 
 // About Page Components
-import { AboutHero } from './components/about/AboutHero';
-import { Timeline } from './components/about/Timeline';
-import { Team } from './components/about/Team';
+import { AboutHero } from "./components/about/AboutHero";
+import { Timeline } from "./components/about/Timeline";
+import { Team } from "./components/about/Team";
 
 // Contact Page Components
-import { ContactSection } from './components/contact/ContactSection';
+import { ContactSection } from "./components/contact/ContactSection";
 
-type Page = 'home' | 'portfolio' | 'about' | 'contact';
+type Page = "home" | "portfolio" | "about" | "contact";
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<Page>('home');
+  const [currentPage, setCurrentPage] = useState<Page>("home");
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
 
   const handleNavigate = (page: string) => {
@@ -36,28 +36,28 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
-      
+
       <main className="flex-grow pt-20">
         {/* HOME PAGE */}
-        {currentPage === 'home' && (
+        {currentPage === "home" && (
           <>
-            <Hero onExploreWork={() => setCurrentPage('portfolio')} />
+            <Hero onExploreWork={() => setCurrentPage("portfolio")} />
             <Philosophy />
-            <FeaturedWorks onViewAll={() => setCurrentPage('portfolio')} />
+            <FeaturedWorks onViewAll={() => setCurrentPage("portfolio")} />
             <Mission />
             <GlobalReach />
           </>
         )}
 
         {/* PORTFOLIO PAGE */}
-        {currentPage === 'portfolio' && (
+        {currentPage === "portfolio" && (
           <>
             <section className="py-32 bg-[var(--color-charcoal)] text-white">
               <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
                 <h1 className="mb-6">Portfolio</h1>
                 <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                  Functionality meets elegance in our diverse collection of architectural projects, 
-                  each designed to inspire and endure.
+                  Functionality meets elegance in our diverse collection of
+                  architectural projects, each designed to inspire and endure.
                 </p>
               </div>
             </section>
@@ -70,7 +70,7 @@ export default function App() {
         )}
 
         {/* ABOUT PAGE */}
-        {currentPage === 'about' && (
+        {currentPage === "about" && (
           <>
             <AboutHero />
             <Timeline />
@@ -79,14 +79,14 @@ export default function App() {
         )}
 
         {/* CONTACT PAGE */}
-        {currentPage === 'contact' && (
+        {currentPage === "contact" && (
           <>
             <section className="py-32 bg-[var(--color-charcoal)] text-white">
               <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
                 <h1 className="mb-6">Contact Us</h1>
                 <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                  Ready to start your next architectural project? Let's discuss how we can 
-                  transform your vision into reality.
+                  Ready to start your next architectural project? Let's discuss
+                  how we can transform your vision into reality.
                 </p>
               </div>
             </section>

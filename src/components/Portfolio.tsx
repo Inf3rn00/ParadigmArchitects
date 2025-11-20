@@ -1,5 +1,16 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { Badge } from "./ui/badge";
+
+function FallbackBadge({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <div
+      className={`inline-flex items-center rounded-full border border-transparent px-2.5 py-0.5 text-xs font-semibold uppercase transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
+// ---------------------------------
+
 
 const projects = [
   {
@@ -72,7 +83,8 @@ export function Portfolio() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-medium">{project.title}</h3>
-                  <Badge variant="secondary">{project.category}</Badge>
+                  {/* Replaced <Badge variant="secondary"> with <FallbackBadge> */}
+                  <FallbackBadge>{project.category}</FallbackBadge> 
                 </div>
                 <p className="text-sm text-muted-foreground">{project.location}</p>
                 <p className="text-muted-foreground">{project.description}</p>

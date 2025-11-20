@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import * as LabelPrimitive from "@radix-ui/react-label@2.1.2";
-import { Slot } from "@radix-ui/react-slot@1.1.2";
+import * as LabelPrimitive from "@radix-ui/react-label";
+import { Slot } from "@radix-ui/react-slot";
 import {
   Controller,
   FormProvider,
@@ -11,27 +11,26 @@ import {
   type ControllerProps,
   type FieldPath,
   type FieldValues,
-} from "react-hook-form@7.55.0";
+} from "react-hook-form";
 
 import { cn } from "./utils";
-import { Label } from "./label";
 
 const Form = FormProvider;
 
 type FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
 > = {
   name: TName;
 };
 
 const FormFieldContext = React.createContext<FormFieldContextValue>(
-  {} as FormFieldContextValue,
+  {} as FormFieldContextValue
 );
 
 const FormField = <
   TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
+  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
 >({
   ...props
 }: ControllerProps<TFieldValues, TName>) => {
@@ -41,6 +40,16 @@ const FormField = <
     </FormFieldContext.Provider>
   );
 };
+
+type FormItemContextValue = {
+  id: string;
+};
+
+const FormItemContext = React.createContext<FormItemContextValue>(
+  {} as FormItemContextValue
+);
+
+// --- Hooks and Components (Modified FormLabel) ---
 
 const useFormField = () => {
   const fieldContext = React.useContext(FormFieldContext);
@@ -65,14 +74,6 @@ const useFormField = () => {
   };
 };
 
-type FormItemContextValue = {
-  id: string;
-};
-
-const FormItemContext = React.createContext<FormItemContextValue>(
-  {} as FormItemContextValue,
-);
-
 function FormItem({ className, ...props }: React.ComponentProps<"div">) {
   const id = React.useId();
 
@@ -87,6 +88,8 @@ function FormItem({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
+// SIMPLIFIED: Uses the Radix Label Primitive directly instead of an external Label component
+// This assumes your old Label component was just a styled wrapper around LabelPrimitive.Root
 function FormLabel({
   className,
   ...props
@@ -94,10 +97,14 @@ function FormLabel({
   const { error, formItemId } = useFormField();
 
   return (
-    <Label
+    <LabelPrimitive.Root
       data-slot="form-label"
       data-error={!!error}
-      className={cn("data-[error=true]:text-destructive", className)}
+      className={cn(
+        "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70", // Default Radix/Shadcn styling
+        "data-[error=true]:text-destructive",
+        className
+      )}
       htmlFor={formItemId}
       {...props}
     />
