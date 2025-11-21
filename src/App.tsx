@@ -14,7 +14,7 @@ import { PortfolioGrid } from "./components/portfolio/PortfolioGrid";
 
 // About Page Components
 import { AboutHero } from "./components/about/AboutHero";
-import { Timeline } from "./components/about/Timeline";
+// import { Timeline } from "./components/about/Timeline";
 import { Team } from "./components/about/Team";
 
 // Contact Page Components
