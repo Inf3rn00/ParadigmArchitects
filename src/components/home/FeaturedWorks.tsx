@@ -13,7 +13,7 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
       category: "Sustainable",
       impact: "Net Zero Energy",
       image:
-        "https://images.unsplash.com/photo-1521708266372-b3547456cc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGFyY2hpdGVjdHVyZSUyMGRlc2lnbnxlbnwxfHx8fDE3NjM1ODIyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "/projectImage1.jpg",
       height: "tall",
     },
     {
@@ -22,7 +22,7 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
       category: "Cultural",
       impact: "Enhancing Community Experiences",
       image:
-        "https://images.unsplash.com/photo-1762780087351-703502cdb85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nfGVufDF8fHx8MTc2MzU5MzI5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+        "./projectImage2.jpg",
       height: "short",
     },
     {
@@ -31,7 +31,7 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
       category: "Residential",
       impact: "Contemporary Living",
       image:
-        "https://images.unsplash.com/photo-1667375721269-448f78e68022?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGFyY2hpdGVjdHVyZSUyMG1vZGVybnxlbnwxfHx8fDE3NjM1OTMyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "./heroBg.jpg",
       height: "short",
     },
     {
@@ -39,8 +39,8 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
       title: "Crystal Tower",
       category: "Commercial",
       impact: "Redefining Urban Skylines",
-      image:
-        "https://images.unsplash.com/photo-1580741990231-4aa1c1d9a76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYXJjaGl0ZWN0dXJlJTIwZ2xhc3N8ZW58MXx8fHwxNzYzNTkzMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+       image:
+        "/projectImage1.jpg",
       height: "tall",
     },
     {
@@ -49,7 +49,7 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
       category: "Cultural",
       impact: "Material Innovation",
       image:
-        "https://images.unsplash.com/photo-1744148621897-5fb0b6323543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGFyY2hpdGVjdHVyZSUyMG1pbmltYWxpc3R8ZW58MXx8fHwxNzYzNTkzMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "/projectImage2.jpg",
       height: "short",
     },
     {
@@ -57,62 +57,67 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
       title: "Shadow Play Pavilion",
       category: "Cultural",
       impact: "Light & Form Mastery",
-      image:
-        "https://images.unsplash.com/photo-1744139519471-ce32827f14e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBzaGFkb3clMjBsaWdodHxlbnwxfHx8fDE3NjM1OTMyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image:
+        "/heroBg.jpg",
       height: "short",
     },
   ];
 
   return (
-    <section className="py-24 bg-[var(--color-silver)]">
+    <section className="py-24 bg-silver">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex justify-between items-end mb-16 fade-in">
           <div>
-            <h2 className="text-[var(--color-charcoal)] mb-2">
+            <h2 className="text-charcoal mb-4 text-4xl lg:text-5xl font-display font-bold tracking-tight">
               Featured Works
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
               Showcasing excellence in architectural design
             </p>
           </div>
           <button
             onClick={onViewAll}
-            className="hidden md:flex items-center gap-2 text-[var(--color-copper)] hover:gap-3 transition-all duration-150"
+            className="hidden md:flex items-center gap-3 group bg-copper hover:bg-copper-light text-white px-8 py-4 transition-all duration-300 ease-out hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-copper-light focus:ring-offset-2 cursor-pointer rounded-md"
           >
-            <span className="tracking-wide">View All Projects</span>
-            <ArrowRight size={20} />
+            <span className="tracking-wide font-semibold">View All Projects</span>
+            <ArrowRight 
+              size={20} 
+              className="transition-transform duration-300 group-hover:translate-x-1 group-focus:translate-x-1" 
+            />
           </button>
         </div>
 
         {/* Masonry Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
-              className={`group relative overflow-hidden bg-white ${
+              className={`group relative overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 ease-out hover:scale-[1.02] focus-within:scale-[1.02] focus-within:shadow-2xl focus-within:outline-none focus-within:ring-2 focus-within:ring-copper focus-within:ring-offset-2 ${
                 project.height === "tall" ? "md:row-span-2" : ""
               }`}
             >
               <div
                 className={`relative overflow-hidden ${
-                  project.height === "tall" ? "h-[600px]" : "h-[290px]"
+                  project.height === "tall" ? "h-[672px]" : "h-[320px]"
                 }`}
               >
                 <ImageWithFallback
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-150">
-                  <span className="text-sm tracking-wider text-[var(--color-copper)] mb-2 block opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                  <span className="text-sm tracking-wider text-copper font-semibold mb-3 block opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                     {project.category}
                   </span>
-                  <h4 className="mb-2">{project.title}</h4>
-                  <p className="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                  <h4 className="mb-4 text-2xl font-display font-semibold tracking-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                    {project.title}
+                  </h4>
+                  <p className="text-concrete leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300">
                     {project.impact}
                   </p>
                 </div>
@@ -121,12 +126,16 @@ export function FeaturedWorks({ onViewAll }: FeaturedWorksProps) {
           ))}
         </div>
 
+        {/* Mobile Button - Fixed with cursor-pointer */}
         <button
           onClick={onViewAll}
-          className="md:hidden flex items-center gap-2 text-[var(--color-copper)] mx-auto mt-8"
+          className="md:hidden flex items-center gap-3 justify-center bg-copper hover:bg-copper-light text-white px-8 py-4 mx-auto mt-12 transition-all duration-300 ease-out hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-copper-light focus:ring-offset-2 cursor-pointer"
         >
-          <span className="tracking-wide">View All Projects</span>
-          <ArrowRight size={20} />
+          <span className="tracking-wide font-semibold">View All Projects</span>
+          <ArrowRight 
+            size={20} 
+            className="transition-transform duration-300 group-hover:translate-x-1" 
+          />
         </button>
       </div>
     </section>

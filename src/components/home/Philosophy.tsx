@@ -22,27 +22,38 @@ export function Philosophy() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
-          <h2 className="text-[var(--color-charcoal)] mb-4">The Paradigm Philosophy</h2>
-          <div className="w-24 h-[2px] bg-[var(--color-copper)] mx-auto"></div>
+        <div className="text-center mb-20 fade-in">
+          <h2 className="text-charcoal mb-6 text-4xl lg:text-5xl font-display font-bold tracking-tight">
+            The Paradigm Philosophy
+          </h2>
+          <div className="w-24 h-1 bg-copper mx-auto mb-4"></div>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+            Three core principles that guide every project we undertake
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return (
               <div
                 key={pillar.title}
-                className={`p-12 bg-white hover:bg-[var(--color-silver)] transition-colors duration-150 ${
-                  index !== pillars.length - 1 ? 'border-r border-[var(--color-concrete)]' : ''
-                }`}
+                className="group p-12 bg-white hover:bg-offwhite border border-concrete rounded-lg transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl focus-within:scale-105 focus-within:shadow-xl focus-within:outline-none focus-within:ring-2 focus-within:ring-copper focus-within:ring-offset-2"
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 flex items-center justify-center mb-6">
-                    <Icon size={48} className="text-[var(--color-copper)]" strokeWidth={1.5} />
+                  <div className="w-20 h-20 flex items-center justify-center mb-8 bg-copper/10 rounded-full group-hover:bg-copper/20 group-hover:scale-110 transition-all duration-300">
+                    <Icon 
+                      size={40} 
+                      className="text-copper group-hover:text-copper-light transition-colors duration-300" 
+                      strokeWidth={1.5} 
+                    />
                   </div>
-                  <h4 className="text-[var(--color-charcoal)] mb-4">{pillar.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{pillar.description}</p>
+                  <h4 className="text-charcoal mb-6 text-2xl font-display font-semibold tracking-tight group-hover:text-copper transition-colors duration-300">
+                    {pillar.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {pillar.description}
+                  </p>
                 </div>
               </div>
             );

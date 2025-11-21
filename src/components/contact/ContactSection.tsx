@@ -31,86 +31,121 @@ export function ContactSection() {
   };
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-offwhite">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
+        {/* Header Section */}
+        <div className="text-center mb-16 fade-in">
+          <h2 className="text-4xl md:text-5xl font-display font-light text-charcoal mb-6">
+            Let's Build Together
+          </h2>
+          <div className="w-24 h-0.5 bg-copper mx-auto mb-6"></div>
+          <p className="text-lg text-charcoal/70 max-w-2xl mx-auto leading-relaxed font-sans">
+            Whether you're envisioning a sustainable residential project, a cultural landmark, 
+            or a commercial development, we're here to bring your architectural vision to life 
+            across Nigeria. Reach out to discuss how we can collaborate.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Info */}
-          <div>
-            <h2 className="text-[var(--color-charcoal)] mb-6">Let's Build Together</h2>
-            <p className="text-gray-600 mb-12 leading-relaxed">
-              Whether you're envisioning a sustainable residential project, a cultural landmark, 
-              or a commercial development, we're here to bring your architectural vision to life. 
-              Reach out to discuss how we can collaborate.
-            </p>
-
-            {/* Contact Details */}
+          <div className="fade-in">
             <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="p-4 bg-[var(--color-silver)]">
-                  <MapPin size={24} className="text-[var(--color-copper)]" />
+              <div className="flex items-start gap-6 group hover:translate-x-2 transition-transform duration-300">
+                <div className="p-4 bg-concrete rounded-sm group-hover:bg-copper/10 transition-colors duration-300">
+                  <MapPin size={24} className="text-copper transition-colors duration-300" />
                 </div>
                 <div>
-                  <h6 className="text-[var(--color-charcoal)] mb-2">Visit Us</h6>
-                  <p className="text-gray-600">
-                    123 Design Avenue<br />
-                    New York, NY 10001<br />
-                    United States
+                  <h6 className="text-charcoal font-display text-lg mb-3">Visit Our Office</h6>
+                  <p className="text-charcoal/70 leading-relaxed font-sans">
+                    Plot 1029, Shehu Yar'Adua Way<br />
+                    Mabushi, Abuja<br />
+                    Federal Capital Territory, Nigeria
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="p-4 bg-[var(--color-silver)]">
-                  <Phone size={24} className="text-[var(--color-copper)]" />
+              <div className="flex items-start gap-6 group hover:translate-x-2 transition-transform duration-300">
+                <div className="p-4 bg-concrete rounded-sm group-hover:bg-copper/10 transition-colors duration-300">
+                  <Phone size={24} className="text-copper transition-colors duration-300" />
                 </div>
                 <div>
-                  <h6 className="text-[var(--color-charcoal)] mb-2">Call Us</h6>
-                  <p className="text-gray-600">
-                    +1 (555) 123-4567<br />
-                    Mon-Fri, 9:00 AM - 6:00 PM EST
+                  <h6 className="text-charcoal font-display text-lg mb-3">Call Us Directly</h6>
+                  <p className="text-charcoal/70 leading-relaxed font-sans">
+                    +234 (0) 809 000 5678<br />
+                    <span className="text-sm text-charcoal/50">Monday - Friday: 8:00 AM - 6:00 PM</span>
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <div className="p-4 bg-[var(--color-silver)]">
-                  <Mail size={24} className="text-[var(--color-copper)]" />
+              <div className="flex items-start gap-6 group hover:translate-x-2 transition-transform duration-300">
+                <div className="p-4 bg-concrete rounded-sm group-hover:bg-copper/10 transition-colors duration-300">
+                  <Mail size={24} className="text-copper transition-colors duration-300" />
                 </div>
                 <div>
-                  <h6 className="text-[var(--color-charcoal)] mb-2">Email Us</h6>
-                  <p className="text-gray-600">
-                    info@paradigmarch.com<br />
-                    careers@paradigmarch.com
+                  <h6 className="text-charcoal font-display text-lg mb-3">Email Us</h6>
+                  <p className="text-charcoal/70 leading-relaxed font-sans">
+                    info@theparadigmarch.com
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Office Hours */}
-            <div className="mt-12 p-6 bg-[var(--color-silver)]">
-              <h6 className="text-[var(--color-charcoal)] mb-3">Office Hours</h6>
-              <div className="space-y-2 text-sm text-gray-600">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 6:00 PM</span>
+            <div className="mt-12 p-8 bg-white rounded-sm border border-concrete fade-in">
+              <h6 className="text-charcoal font-display text-lg mb-4">Business Hours</h6>
+              <div className="space-y-3 text-charcoal/70 font-sans">
+                <div className="flex justify-between items-center py-2 border-b border-concrete/50">
+                  <span className="font-medium">Monday - Friday</span>
+                  <span className="text-copper">8:00 AM - 6:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>10:00 AM - 2:00 PM</span>
+                <div className="flex justify-between items-center py-2 border-b border-concrete/50">
+                  <span className="font-medium">Saturday</span>
+                  <span className="text-copper">9:00 AM - 2:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span>Closed</span>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-medium">Sunday</span>
+                  <span className="text-charcoal/40">Closed</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Service Areas */}
+            <div className="mt-8 p-8 bg-white rounded-sm border border-concrete fade-in">
+              <h6 className="text-charcoal font-display text-lg mb-4">Service Areas</h6>
+              <div className="grid grid-cols-2 gap-2 text-sm text-charcoal/70 font-sans">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-copper rounded-full"></div>
+                  <span>Abuja FCT</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-copper rounded-full"></div>
+                  <span>Lagos</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-copper rounded-full"></div>
+                  <span>Port Harcourt</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-copper rounded-full"></div>
+                  <span>Kano</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-copper rounded-full"></div>
+                  <span>Ibadan</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-copper rounded-full"></div>
+                  <span>Nationwide</span>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div>
+          <div className="fade-in">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm tracking-wide text-[var(--color-charcoal)] mb-2">
+                <label htmlFor="name" className="block text-sm tracking-wide text-charcoal mb-3 font-sans font-medium">
                   Full Name *
                 </label>
                 <input
@@ -120,12 +155,13 @@ export function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-[var(--color-concrete)] focus:border-[var(--color-copper)] focus:outline-none transition-colors duration-150"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 font-sans bg-white"
+                  placeholder="Enter your full name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm tracking-wide text-[var(--color-charcoal)] mb-2">
+                <label htmlFor="email" className="block text-sm tracking-wide text-charcoal mb-3 font-sans font-medium">
                   Email Address *
                 </label>
                 <input
@@ -135,12 +171,13 @@ export function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-[var(--color-concrete)] focus:border-[var(--color-copper)] focus:outline-none transition-colors duration-150"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 font-sans bg-white"
+                  placeholder="your.email@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm tracking-wide text-[var(--color-charcoal)] mb-2">
+                <label htmlFor="company" className="block text-sm tracking-wide text-charcoal mb-3 font-sans font-medium">
                   Company / Organization
                 </label>
                 <input
@@ -149,12 +186,13 @@ export function ContactSection() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-[var(--color-concrete)] focus:border-[var(--color-copper)] focus:outline-none transition-colors duration-150"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 font-sans bg-white"
+                  placeholder="Your company name (optional)"
                 />
               </div>
 
               <div>
-                <label htmlFor="projectType" className="block text-sm tracking-wide text-[var(--color-charcoal)] mb-2">
+                <label htmlFor="projectType" className="block text-sm tracking-wide text-charcoal mb-3 font-sans font-medium">
                   Project Type
                 </label>
                 <select
@@ -162,20 +200,21 @@ export function ContactSection() {
                   name="projectType"
                   value={formData.projectType}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-[var(--color-concrete)] focus:border-[var(--color-copper)] focus:outline-none transition-colors duration-150 bg-white"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 font-sans bg-white"
                 >
-                  <option value="">Select a project type</option>
+                  <option value="">Select your project type</option>
                   <option value="sustainable">Sustainable Design</option>
                   <option value="cultural">Cultural Spaces</option>
-                  <option value="residential">Residential</option>
-                  <option value="commercial">Commercial</option>
-                  <option value="other">Other</option>
+                  <option value="residential">Residential Projects</option>
+                  <option value="commercial">Commercial Architecture</option>
+                  <option value="mixed-use">Mixed-Use Development</option>
+                  <option value="other">Other Project Type</option>
                 </select>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm tracking-wide text-[var(--color-charcoal)] mb-2">
-                  Message *
+                <label htmlFor="message" className="block text-sm tracking-wide text-charcoal mb-3 font-sans font-medium">
+                  Project Details *
                 </label>
                 <textarea
                   id="message"
@@ -184,18 +223,23 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-[var(--color-concrete)] focus:border-[var(--color-copper)] focus:outline-none transition-colors duration-150 resize-none"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 font-sans bg-white resize-none"
+                  placeholder="Tell us about your project vision, requirements, timeline, and any specific needs..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="group w-full relative inline-flex items-center justify-center gap-3 bg-[var(--color-copper)] text-white px-8 py-4 overflow-hidden"
+                className="group w-full relative inline-flex items-center justify-center gap-3 bg-copper text-offwhite px-8 py-4 overflow-hidden transition-all duration-300 hover:bg-charcoal"
               >
-                <span className="relative z-10 tracking-wide">Send Message</span>
-                <Send size={20} className="relative z-10 transition-transform duration-150 group-hover:translate-x-1" />
-                <span className="absolute inset-0 bg-[var(--color-bronze)] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-150 origin-left"></span>
+                <span className="relative z-10 tracking-wide font-sans font-medium">Send Message</span>
+                <Send size={20} className="relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
+                <div className="absolute inset-0 bg-charcoal transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </button>
+
+              <p className="text-sm text-charcoal/50 text-center font-sans mt-4">
+                We typically respond to all inquiries within 24 hours during business days.
+              </p>
             </form>
           </div>
         </div>

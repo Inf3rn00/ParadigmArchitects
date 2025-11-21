@@ -83,7 +83,6 @@ export function Portfolio() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-medium">{project.title}</h3>
-                  {/* Replaced <Badge variant="secondary"> with <FallbackBadge> */}
                   <FallbackBadge>{project.category}</FallbackBadge> 
                 </div>
                 <p className="text-sm text-muted-foreground">{project.location}</p>

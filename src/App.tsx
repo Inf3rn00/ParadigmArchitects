@@ -34,28 +34,30 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-offwhite text-charcoal font-sans">
       <Header currentPage={currentPage} onNavigate={handleNavigate} />
 
-      <main className="flex-grow pt-20">
+      <main className="grow pt-20">
         {/* HOME PAGE */}
         {currentPage === "home" && (
-          <>
+          <div className="fade-in">
             <Hero onExploreWork={() => setCurrentPage("portfolio")} />
             <Philosophy />
             <FeaturedWorks onViewAll={() => setCurrentPage("portfolio")} />
             <Mission />
             <GlobalReach />
-          </>
+          </div>
         )}
 
         {/* PORTFOLIO PAGE */}
         {currentPage === "portfolio" && (
-          <>
-            <section className="py-32 bg-[var(--color-charcoal)] text-white">
+          <div className="fade-in">
+            <section className="py-32 bg-charcoal text-white">
               <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
-                <h1 className="mb-6">Portfolio</h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                <h1 className="mb-6 text-5xl lg:text-6xl font-display font-bold tracking-tight">
+                  Portfolio
+                </h1>
+                <p className="text-xl text-silver max-w-2xl mx-auto leading-relaxed">
                   Functionality meets elegance in our diverse collection of
                   architectural projects, each designed to inspire and endure.
                 </p>
@@ -66,32 +68,34 @@ export default function App() {
                 <PortfolioGrid />
               </div>
             </section>
-          </>
+          </div>
         )}
 
         {/* ABOUT PAGE */}
         {currentPage === "about" && (
-          <>
+          <div className="fade-in">
             <AboutHero />
-            <Timeline />
+            {/* <Timeline /> */}
             <Team />
-          </>
+          </div>
         )}
 
         {/* CONTACT PAGE */}
         {currentPage === "contact" && (
-          <>
-            <section className="py-32 bg-[var(--color-charcoal)] text-white">
+          <div className="fade-in">
+            <section className="py-32 bg-charcoal text-white">
               <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
-                <h1 className="mb-6">Contact Us</h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                <h1 className="mb-6 text-5xl lg:text-6xl font-display font-bold tracking-tight">
+                  Contact Us
+                </h1>
+                <p className="text-xl text-silver max-w-2xl mx-auto leading-relaxed">
                   Ready to start your next architectural project? Let's discuss
                   how we can transform your vision into reality.
                 </p>
               </div>
             </section>
             <ContactSection />
-          </>
+          </div>
         )}
       </main>
 

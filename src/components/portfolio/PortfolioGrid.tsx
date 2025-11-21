@@ -14,94 +14,65 @@ export function PortfolioGrid() {
   const projects = [
     {
       id: 1,
-      title: "Urban Oasis",
+      title: "Lagos Eco-Tower",
       category: "Sustainable",
-      location: "New York, USA",
+      location: "Victoria Island, Lagos",
       year: "2024",
-      keyFact: "Net Zero Energy",
+      keyFact: "Net Zero Energy Design",
       image:
-        "https://images.unsplash.com/photo-1521708266372-b3547456cc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGFyY2hpdGVjdHVyZSUyMGRlc2lnbnxlbnwxfHx8fDE3NjM1ODIyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "./heroBg.jpg",
     },
     {
       id: 2,
-      title: "Heritage Center",
+      title: "Yoruba Heritage Museum",
       category: "Cultural",
-      location: "London, UK",
+      location: "Ibadan, Oyo State",
       year: "2023",
-      keyFact: "Cultural Landmark",
+      keyFact: "Cultural Preservation Hub",
       image:
-        "https://images.unsplash.com/photo-1762780087351-703502cdb85a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdWx0dXJhbCUyMGFyY2hpdGVjdHVyZSUyMGJ1aWxkaW5nfGVufDF8fHx8MTc2MzU5MzI5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+        "./projectImage1.jpg",
     },
     {
       id: 3,
-      title: "Skyline Residence",
+      title: "Abuja Minimalist Residence",
       category: "Residential",
-      location: "Singapore",
+      location: "Maitama, Abuja",
       year: "2024",
-      keyFact: "Contemporary Living",
+      keyFact: "Contemporary Nigerian Living",
       image:
-        "https://images.unsplash.com/photo-1667375721269-448f78e68022?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGFyY2hpdGVjdHVyZSUyMG1vZGVybnxlbnwxfHx8fDE3NjM1OTMyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "./projectImage2.jpg",
     },
     {
       id: 4,
-      title: "Crystal Tower",
+      title: "Eko Innovation Hub",
       category: "Commercial",
-      location: "Dubai, UAE",
+      location: "Lekki, Lagos",
       year: "2023",
       keyFact: "LEED Platinum Certified",
       image:
-        "https://images.unsplash.com/photo-1580741990231-4aa1c1d9a76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYXJjaGl0ZWN0dXJlJTIwZ2xhc3N8ZW58MXx8fHwxNzYzNTkzMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+        "./projectImage3.jpg",
     },
     {
       id: 5,
-      title: "Concrete Canvas",
+      title: "Benin Cultural Pavilion",
       category: "Cultural",
-      location: "Sydney, Australia",
+      location: "Benin City, Edo State",
       year: "2024",
       keyFact: "Material Innovation Award",
       image:
-        "https://images.unsplash.com/photo-1744148621897-5fb0b6323543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGFyY2hpdGVjdHVyZSUyMG1pbmltYWxpc3R8ZW58MXx8fHwxNjM1OTMyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "./projectImage4.jpg",
     },
     {
       id: 6,
-      title: "Shadow Play Pavilion",
-      category: "Cultural",
-      location: "Tokyo, Japan",
+      title: "Calabar Waterfront Villas",
+      category: "Residential",
+      location: "Calabar, Cross River",
       year: "2023",
       keyFact: "Architectural Excellence",
       image:
-        "https://images.unsplash.com/photo-1744139519471-ce32827f14e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3R1cmUlMjBzaGFkb3clMjBsaWdodHxlbnwxfHx8fDE3NjM1OTMyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "./projectImage1.jpg",
     },
-    {
-      id: 7,
-      title: "Green Horizon",
-      category: "Sustainable",
-      location: "Toronto, Canada",
-      year: "2024",
-      keyFact: "Carbon Negative",
-      image:
-        "https://images.unsplash.com/photo-1695067440629-b5e513976100?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZ3xlbnwxfHx8fDE3NjM1MDUzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    },
-    {
-      id: 8,
-      title: "Lakeside Villa",
-      category: "Residential",
-      location: "Geneva, Switzerland",
-      year: "2023",
-      keyFact: "Luxury Redefined",
-      image:
-        "https://images.unsplash.com/photo-1667375721269-448f78e68022?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGFyY2hpdGVjdHVyZSUyMG1vZGVybnxlbnwxfHx8fDE3NjM1OTMyOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    },
-    {
-      id: 9,
-      title: "Innovation Hub",
-      category: "Commercial",
-      location: "San Francisco, USA",
-      year: "2024",
-      keyFact: "Tech-Forward Design",
-      image:
-        "https://images.unsplash.com/photo-1580741990231-4aa1c1d9a76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYXJjaGl0ZWN0dXJlJTIwZ2xhc3N8ZW58MXx8fHwxNzYzNTkzMjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    },
+ 
   ];
 
   const filters: FilterType[] = [
@@ -118,17 +89,29 @@ export function PortfolioGrid() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto px-4 py-12 fade-in">
+      {/* Header Section */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-display font-light text-charcoal mb-4">
+          Our Architectural Legacy
+        </h2>
+        <p className="text-lg text-charcoal/70 font-sans max-w-3xl mx-auto leading-relaxed">
+          Showcasing our commitment to minimalist design, sustainable practices, and cultural 
+          significance across Nigeria. Each project embodies our mission to create transformative 
+          spaces that enrich lives and stand as timeless monuments to quality craftsmanship.
+        </p>
+      </div>
+
       {/* Filter Bar */}
-      <div className="mb-12 flex flex-wrap gap-4 justify-center">
+      <div className="mb-16 flex flex-wrap gap-3 justify-center">
         {filters.map((filter) => (
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}
-            className={`px-6 py-3 tracking-wide transition-all duration-150 ${
+            className={`px-6 py-3 font-sans tracking-wide transition-all duration-300 ease-out rounded-sm ${
               activeFilter === filter
-                ? "bg-[var(--color-charcoal)] text-white"
-                : "bg-white text-[var(--color-charcoal)] border border-[var(--color-concrete)] hover:border-[var(--color-charcoal)]"
+                ? "bg-charcoal text-offwhite shadow-md"
+                : "bg-offwhite text-charcoal border border-concrete hover:border-charcoal hover:bg-white"
             }`}
           >
             {filter}
@@ -137,39 +120,40 @@ export function PortfolioGrid() {
       </div>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="group relative bg-white overflow-hidden"
+            className="group relative bg-offwhite overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 fade-in"
           >
-            <div className="relative h-[400px] overflow-hidden">
+            <div className="relative h-80 overflow-hidden">
               <ImageWithFallback
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-[var(--color-charcoal)]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-150 flex items-center justify-center p-6">
-                <div className="text-center text-white">
-                  <p className="text-sm tracking-wider text-[var(--color-copper)] mb-3">
-                    KEY FACT
+              <div className="absolute inset-0 bg-charcoal/90 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center p-8 cursor-pointer">
+                <div className="text-center text-offwhite transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-sm tracking-wider text-copper mb-3 font-sans">
+                    PARADIGM APPROACH
                   </p>
-                  <p className="text-xl">{project.keyFact}</p>
+                  <p className="text-xl font-display">{project.keyFact}</p>
+                  <div className="w-12 h-0.5 bg-copper mx-auto mt-4"></div>
                 </div>
               </div>
             </div>
 
             {/* Project Info */}
-            <div className="p-6 bg-white">
-              <span className="text-xs tracking-wider text-[var(--color-copper)] mb-2 block">
+            <div className="p-6 bg-offwhite border-t border-concrete">
+              <span className="text-xs tracking-wider text-copper mb-2 block font-sans uppercase">
                 {project.category}
               </span>
-              <h4 className="text-[var(--color-charcoal)] mb-2">
+              <h4 className="text-charcoal text-xl mb-3 font-display font-medium">
                 {project.title}
               </h4>
-              <div className="flex justify-between text-sm text-gray-600">
+              <div className="flex justify-between text-sm text-charcoal/70 font-sans">
                 <span>{project.location}</span>
                 <span>{project.year}</span>
               </div>
@@ -180,9 +164,33 @@ export function PortfolioGrid() {
 
       {filteredProjects.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-gray-600">No projects found in this category.</p>
+          <p className="text-charcoal/70 font-sans">No projects found in this category.</p>
         </div>
       )}
+
+      {/* Values Footer */}
+      <div className="mt-16 pt-8 border-t border-concrete">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div>
+            <h4 className="font-display text-charcoal mb-3">Minimalist Excellence</h4>
+            <p className="text-sm text-charcoal/70 font-sans">
+              Clean, functional designs that prioritize user experience and timeless aesthetics
+            </p>
+          </div>
+          <div>
+            <h4 className="font-display text-charcoal mb-3">Sustainable Legacy</h4>
+            <p className="text-sm text-charcoal/70 font-sans">
+              Environmentally conscious architecture that positively impacts communities
+            </p>
+          </div>
+          <div>
+            <h4 className="font-display text-charcoal mb-3">Cultural Resonance</h4>
+            <p className="text-sm text-charcoal/70 font-sans">
+              Designs that honor Nigerian heritage while embracing innovative technology
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

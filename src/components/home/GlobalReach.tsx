@@ -1,55 +1,96 @@
-import { MapPin } from 'lucide-react';
+import { MapPin } from "lucide-react";
 
 export function GlobalReach() {
   const locations = [
-    { city: 'New York', country: 'USA', projects: 45 },
-    { city: 'London', country: 'UK', projects: 28 },
-    { city: 'Singapore', country: 'Singapore', projects: 32 },
-    { city: 'Dubai', country: 'UAE', projects: 19 },
-    { city: 'Sydney', country: 'Australia', projects: 16 },
-    { city: 'Toronto', country: 'Canada', projects: 23 },
+    { city: "Kano", country: "Government House", projects: 3 },
+    { city: "Abuja", country: "Hush Apartments", projects: 1 },
+    { city: "Kano", country: "Government House", projects: 3 },
+    { city: "Abuja", country: "Hush Apartments", projects: 1 },
+    { city: "Kano", country: "Government House", projects: 3 },
+    { city: "Abuja", country: "Hush Apartments", projects: 1 },
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-linear-to-br from-white to-gray-50/30">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
-          <h2 className="text-[var(--color-charcoal)] mb-4">Global Reach</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Operating across continents, we bring architectural excellence to communities worldwide, 
-            transforming skylines and enriching lives.
+        {/* Header Section */}
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 text-sm text-copper font-medium mb-3 uppercase tracking-wider">
+            <div className="w-2 h-2 bg-current rounded-full"></div>
+            National Presence
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-light text-charcoal mb-6 leading-tight">
+            Nationwide <span className="font-semibold">Reach</span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+            Operating across the country, we bring architectural excellence to
+            communities everywhere, transforming skylines and enriching lives
+            through innovative design.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {locations.map((location) => (
+        {/* Locations Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {locations.map((location, index) => (
             <div
               key={`${location.city}-${location.country}`}
-              className="group p-8 border border-[var(--color-concrete)] hover:border-[var(--color-copper)] transition-colors duration-150"
+              className="group relative p-8 bg-white rounded-2xl border border-gray-100 hover:border-[var(--color-copper)]/20 transition-all duration-500 hover:shadow-2xl hover:shadow-[var(--color-copper)]/5 hover:-translate-y-2"
+              style={{
+                animationDelay: `${index * 100}ms`,
+                animation: "fadeInUp 0.6s ease-out forwards",
+              }}
             >
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-[var(--color-silver)] group-hover:bg-[var(--color-copper)] transition-colors duration-150">
-                  <MapPin size={24} className="text-[var(--color-charcoal)] group-hover:text-white transition-colors duration-150" />
+              {/* Background Gradient Effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              <div className="relative flex items-start gap-6">
+                {/* Icon Container */}
+                <div className="relative">
+                  <div className="p-4 bg-gradient-to-br from-[var(--color-silver)] to-gray-100 group-hover:from-[var(--color-copper)] group-hover:to-[var(--color-copper)]/80 rounded-xl transition-all duration-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[var(--color-copper)]/20">
+                    <MapPin
+                      size={24}
+                      className="text-[var(--color-charcoal)] group-hover:text-white transition-colors duration-500"
+                    />
+                  </div>
+                  {/* Pulse Animation on Hover */}
+                  <div className="absolute inset-0 rounded-xl bg-[var(--color-copper)] opacity-0 group-hover:opacity-20 group-hover:animate-pulse transition-all duration-500"></div>
                 </div>
-                <div className="flex-1">
-                  <h5 className="text-[var(--color-charcoal)] mb-1">{location.city}</h5>
-                  <p className="text-gray-600 text-sm mb-3">{location.country}</p>
-                  <p className="text-sm text-[var(--color-copper)]">
-                    {location.projects} Projects
+
+                {/* Content */}
+                <div className="flex-1 pt-1">
+                  <div className="flex items-baseline gap-3 mb-2">
+                    <h5 className="text-xl font-semibold text-[var(--color-charcoal)] group-hover:text-[var(--color-copper)] transition-colors duration-300">
+                      {location.city}
+                    </h5>
+                    <span className="text-xs text-gray-400 font-medium px-2 py-1 bg-gray-100 rounded-full">
+                      {location.country}
+                    </span>
+                  </div>
+                  <p className="text-2xl font-bold text-[var(--color-copper)] mb-1">
+                    {location.projects}
+                  </p>
+                  <p className="text-sm text-gray-500 font-medium">
+                    {location.projects === 1
+                      ? "Completed Project"
+                      : "Completed Projects"}
                   </p>
                 </div>
               </div>
+
+              {/* Bottom Border Animation */}
+              <div className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-transparent via-[var(--color-copper)] to-transparent group-hover:w-4/5 group-hover:left-1/10 transition-all duration-500"></div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-6">
-            Expanding our architectural vision across <span className="text-[var(--color-copper)]">6 continents</span> 
-            {' '}and <span className="text-[var(--color-copper)]">20+ countries</span>
-          </p>
-          <div className="inline-block px-6 py-3 border-2 border-[var(--color-copper)] text-[var(--color-charcoal)]">
-            <span className="tracking-wide">Nationwide & International Presence</span>
+        {/* Stats Footer */}
+        <div className="text-center">
+          {/* CTA Badge */}
+          <div className="mt-12 inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--color-copper)]/20 bg-white/50 backdrop-blur-sm rounded-full group hover:border-[var(--color-copper)] hover:bg-[var(--color-copper)]/5 transition-all duration-300">
+            <div className="w-2 h-2 bg-[var(--color-copper)] rounded-full animate-pulse"></div>
+            <span className="text-[var(--color-charcoal)] font-semibold tracking-wide group-hover:text-[var(--color-copper)] transition-colors duration-300">
+              Nationwide & International Presence
+            </span>
           </div>
         </div>
       </div>
