@@ -2,12 +2,21 @@ import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export function Hero() {
+  const { scrollY } = useScroll();
+  const backgroundY = useTransform(scrollY, [0, 500], ["0%", "20%"]);
+  const contentY = useTransform(scrollY, [0, 500], ["0%", "50%"]);
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <motion.div
+        className="absolute inset-0 z-0"
+        style={{ y: backgroundY }}
+      >
         <ImageWithFallback
           src="./heroBg.jpg"
           alt="Modern Architecture"
@@ -15,10 +24,13 @@ export function Hero() {
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-linear-to-b from-charcoal/70 via-charcoal/50 to-charcoal/70"></div>
-      </div>
+      </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
+      <motion.div
+        className="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 text-center"
+        style={{ y: contentY, opacity }}
+      >
         <div className="max-w-4xl mx-auto fade-in">
           <h1 className="text-white mb-8 text-4xl lg:text-5xl xl:text-6xl font-display font-bold tracking-tight leading-tight">
             Cultivating Legacies that Stand the Test of Time.
@@ -41,15 +53,18 @@ export function Hero() {
             <span className="absolute inset-0 bg-copper-light transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-left"></span>
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10">
+      <motion.div
+        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-10"
+        style={{ opacity }}
+      >
         <div className="flex flex-col items-center gap-2">
           <ChevronDown size={24} className="text-concrete animate-bounce" />
           <div className="w-[1px] h-12 bg-gradient-to-b from-transparent via-concrete to-transparent animate-pulse"></div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

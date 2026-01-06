@@ -8,8 +8,8 @@ export function Header() {
 
   const navItems = [
     { label: 'Home', path: '/' },
-    { label: 'Portfolio', path: '/portfolio' },
     { label: 'About', path: '/about' },
+    { label: 'Portfolio', path: '/portfolio' },
     { label: 'Contact', path: '/contact' },
   ];
 
@@ -22,7 +22,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-concrete backdrop-blur-sm bg-white/95">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo */} 
           <Link
             to="/"
             onClick={() => setMobileMenuOpen(false)}
@@ -46,8 +46,8 @@ export function Header() {
               >
                 <span
                   className={`tracking-wide transition-colors duration-300 font-medium ${isActive(item.path)
-                      ? 'text-charcoal'
-                      : 'text-gray-600 hover:text-charcoal'
+                    ? 'text-charcoal'
+                    : 'text-gray-600 hover:text-charcoal'
                     }`}
                 >
                   {item.label}
@@ -80,8 +80,8 @@ export function Header() {
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`py-4 text-left tracking-wide transition-all duration-300 font-medium border-l-4 focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:rounded-sm px-4 -mx-4 ${isActive(item.path)
-                    ? 'text-charcoal border-copper bg-copper/5'
-                    : 'text-gray-600 border-transparent hover:text-charcoal hover:border-copper/30 hover:bg-copper/5'
+                  ? 'text-charcoal border-copper bg-copper/5'
+                  : 'text-gray-600 border-transparent hover:text-charcoal hover:border-copper/30 hover:bg-copper/5'
                   }`}
               >
                 {item.label}
