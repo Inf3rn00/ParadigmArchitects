@@ -1,12 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
-interface HeroProps {
-  onExploreWork: () => void;
-}
-
-export function Hero({ onExploreWork }: HeroProps) {
+export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -30,8 +27,8 @@ export function Hero({ onExploreWork }: HeroProps) {
             Redefining the landscape of architectural excellence through
             innovation and minimalist design.
           </p>
-          <button
-            onClick={onExploreWork}
+          <Link
+            to="/portfolio"
             className="group relative inline-flex items-center gap-3 bg-copper hover:bg-copper-light text-white px-10 py-4 overflow-hidden transition-all duration-300 ease-out hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-copper-light focus:ring-offset-2 focus:ring-offset-charcoal/30  rounded-md cursor-pointer"
           >
             <span className="relative z-10 tracking-wide font-semibold text-lg">
@@ -42,7 +39,7 @@ export function Hero({ onExploreWork }: HeroProps) {
               className="relative z-10 transition-transform duration-300 group-hover:translate-x-1 group-focus:translate-x-1"
             />
             <span className="absolute inset-0 bg-copper-light transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100 transition-transform duration-300 origin-left"></span>
-          </button>
+          </Link>
         </div>
       </div>
 

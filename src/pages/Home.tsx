@@ -4,17 +4,12 @@ import { FeaturedWorks } from "../components/home/FeaturedWorks";
 import { Mission } from "../components/home/Mission";
 import { GlobalReach } from "../components/home/GlobalReach";
 
-interface HomeProps {
-    onExploreWork: () => void;
-    onViewAll: () => void;
-}
-
-export function Home({ onExploreWork, onViewAll }: HomeProps) {
+export function Home() {
     return (
         <div className="fade-in">
-            <Hero onExploreWork={onExploreWork} />
+            <Hero />
             <Philosophy />
-            <FeaturedWorks onViewAll={onViewAll} />
+            <FeaturedWorks />
             <Mission />
             <GlobalReach />
         </div>

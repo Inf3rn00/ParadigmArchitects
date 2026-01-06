@@ -7,6 +7,7 @@ import {
   MapPin,
   MessageCircle,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -44,36 +45,36 @@ export function Footer() {
             </h6>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-silver hover:text-white hover:translate-x-1 transition-all duration-300 ease-out block"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/portfolio"
                   className="text-silver hover:text-white hover:translate-x-1 transition-all duration-300 ease-out block"
                 >
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/about"
                   className="text-silver hover:text-white hover:translate-x-1 transition-all duration-300 ease-out block"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="text-silver hover:text-white hover:translate-x-1 transition-all duration-300 ease-out block"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -124,7 +125,7 @@ export function Footer() {
                   Mabushi, Abuja
                 </span>
               </li>
-             
+
               <li className="flex items-center gap-3 group hover:translate-x-1 transition-transform duration-300">
                 <Phone
                   size={20}
@@ -143,7 +144,7 @@ export function Footer() {
                   info@theparadigmarch.com
                 </span>
               </li>
-             
+
             </ul>
 
             {/* Social Links */}
@@ -166,7 +167,7 @@ export function Footer() {
               >
                 <Twitter size={22} />
               </a>
-             
+
               <a
                 href="https://wa.me/2349060001234"
                 className="text-silver hover:text-copper hover:scale-110 transition-all duration-300 ease-out"
