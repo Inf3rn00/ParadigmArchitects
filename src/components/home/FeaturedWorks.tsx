@@ -58,6 +58,15 @@ export function FeaturedWorks() {
         "/heroBg.jpg",
       height: "short",
     },
+    {
+      id: 7,
+      title: "Eko Innovation Hub",
+      category: "Commercial",
+      impact: "Innovation & Technology",
+      image:
+        "./projectImage3.jpg",
+      height: "short",
+    },
   ];
 
   return (
