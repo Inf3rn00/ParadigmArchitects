@@ -32,7 +32,7 @@ export function Hero() {
         style={{ y: contentY, opacity }}
       >
         <div className="max-w-4xl mx-auto fade-in">
-          <h1 className="text-white mb-8 text-4xl lg:text-5xl xl:text-6xl font-display font-bold tracking-tight leading-tight">
+          <h1 className="text-white mb-8 text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight">
             Cultivating Legacies that Stand the Test of Time.
           </h1>
           <p className="text-xl lg:text-2xl text-concrete mb-12 max-w-3xl mx-auto leading-relaxed">

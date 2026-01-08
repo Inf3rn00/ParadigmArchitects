@@ -24,7 +24,7 @@ export function Footer() {
                   className="w-full h-full rotate-90"
                 />
               </div>
-              <span className="tracking-tight font-display font-semibold text-lg group-hover:text-copper transition-colors duration-300">
+              <span className="tracking-tight font-semibold text-lg group-hover:text-copper transition-colors duration-300">
                 THE
                 <br />
                 PARADIGM
@@ -40,7 +40,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div className="fade-in">
-            <h6 className="text-copper mb-6 tracking-wide font-display font-semibold text-lg">
+            <h6 className="text-copper mb-6 tracking-wide font-semibold text-lg">
               Quick Links
             </h6>
             <ul className="space-y-4">
@@ -81,7 +81,7 @@ export function Footer() {
 
           {/* Services */}
           <div className="fade-in">
-            <h6 className="text-copper mb-6 tracking-wide font-display font-semibold text-lg">
+            <h6 className="text-copper mb-6 tracking-wide font-semibold text-lg">
               Services
             </h6>
             <ul className="space-y-4">
@@ -110,7 +110,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="fade-in">
-            <h6 className="text-copper mb-6 tracking-wide font-display font-semibold text-lg">
+            <h6 className="text-copper mb-6 tracking-wide font-semibold text-lg">
               Contact
             </h6>
             <ul className="space-y-4">

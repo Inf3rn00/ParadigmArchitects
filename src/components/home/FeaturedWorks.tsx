@@ -65,7 +65,7 @@ export function FeaturedWorks() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-end mb-16 fade-in">
           <div>
-            <h2 className="text-charcoal mb-4 text-4xl lg:text-5xl font-display font-bold tracking-tight">
+            <h2 className="text-charcoal mb-4 text-4xl lg:text-5xl font-bold tracking-tight">
               Featured Works
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
@@ -109,7 +109,7 @@ export function FeaturedWorks() {
                   <span className="text-sm tracking-wider text-copper font-semibold mb-3 block opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                     {project.category}
                   </span>
-                  <h4 className="mb-4 text-2xl font-display font-semibold tracking-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                  <h4 className="mb-4 text-2xl font-semibold tracking-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
                     {project.title}
                   </h4>
                   <p className="text-concrete leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-300">

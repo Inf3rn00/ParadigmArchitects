@@ -72,7 +72,7 @@ export function PortfolioGrid() {
       image:
         "./projectImage1.jpg",
     },
- 
+
   ];
 
   const filters: FilterType[] = [
@@ -88,16 +88,19 @@ export function PortfolioGrid() {
       ? projects
       : projects.filter((p) => p.category === activeFilter);
 
+
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 fade-in">
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-display font-light text-charcoal mb-4">
+        <h2 className="text-4xl md:text-5xl font-light text-charcoal mb-6">
           Our Architectural Legacy
         </h2>
-        <p className="text-lg text-charcoal/70 font-sans max-w-3xl mx-auto leading-relaxed">
-          Showcasing our commitment to minimalist design, sustainable practices, and cultural 
-          significance across Nigeria. Each project embodies our mission to create transformative 
+        <div className="w-24 h-0.5 bg-copper mx-auto mb-6"></div>
+        <p className="text-lg text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+          Showcasing our commitment to minimalist design, sustainable practices, and cultural
+          significance across Nigeria. Each project embodies our mission to create transformative
           spaces that enrich lives and stand as timeless monuments to quality craftsmanship.
         </p>
       </div>
@@ -108,11 +111,10 @@ export function PortfolioGrid() {
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}
-            className={`px-6 py-3 font-sans tracking-wide transition-all duration-300 ease-out rounded-sm ${
-              activeFilter === filter
-                ? "bg-charcoal text-offwhite shadow-md"
-                : "bg-offwhite text-charcoal border border-concrete hover:border-charcoal hover:bg-white"
-            }`}
+            className={`px-6 py-3 tracking-wide transition-all duration-300 ease-out rounded-sm ${activeFilter === filter
+              ? "bg-charcoal text-offwhite shadow-md"
+              : "bg-offwhite text-charcoal border border-concrete hover:border-charcoal hover:bg-white"
+              }`}
           >
             {filter}
           </button>
@@ -136,10 +138,10 @@ export function PortfolioGrid() {
               {/* Hover Overlay */}
               <div className="absolute inset-0 bg-charcoal/90 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center p-8 cursor-pointer">
                 <div className="text-center text-offwhite transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <p className="text-sm tracking-wider text-copper mb-3 font-sans">
+                  <p className="text-sm tracking-wider text-copper mb-3">
                     PARADIGM APPROACH
                   </p>
-                  <p className="text-xl font-display">{project.keyFact}</p>
+                  <p className="text-xl">{project.keyFact}</p>
                   <div className="w-12 h-0.5 bg-copper mx-auto mt-4"></div>
                 </div>
               </div>
@@ -147,13 +149,13 @@ export function PortfolioGrid() {
 
             {/* Project Info */}
             <div className="p-6 bg-offwhite border-t border-concrete">
-              <span className="text-xs tracking-wider text-copper mb-2 block font-sans uppercase">
+              <span className="text-xs tracking-wider text-copper mb-2 block uppercase">
                 {project.category}
               </span>
-              <h4 className="text-charcoal text-xl mb-3 font-display font-medium">
+              <h4 className="text-charcoal text-xl mb-3 font-medium">
                 {project.title}
               </h4>
-              <div className="flex justify-between text-sm text-charcoal/70 font-sans">
+              <div className="flex justify-between text-sm text-charcoal/70">
                 <span>{project.location}</span>
                 <span>{project.year}</span>
               </div>
@@ -164,7 +166,7 @@ export function PortfolioGrid() {
 
       {filteredProjects.length === 0 && (
         <div className="text-center py-16">
-          <p className="text-charcoal/70 font-sans">No projects found in this category.</p>
+          <p className="text-charcoal/70">No projects found in this category.</p>
         </div>
       )}
 
@@ -172,20 +174,20 @@ export function PortfolioGrid() {
       <div className="mt-16 pt-8 border-t border-concrete">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <h4 className="font-display text-charcoal mb-3">Minimalist Excellence</h4>
-            <p className="text-sm text-charcoal/70 font-sans">
+            <h4 className="text-charcoal mb-3">Minimalist Excellence</h4>
+            <p className="text-sm text-charcoal/70">
               Clean, functional designs that prioritize user experience and timeless aesthetics
             </p>
           </div>
           <div>
-            <h4 className="font-display text-charcoal mb-3">Sustainable Legacy</h4>
-            <p className="text-sm text-charcoal/70 font-sans">
+            <h4 className="text-charcoal mb-3">Sustainable Legacy</h4>
+            <p className="text-sm text-charcoal/70">
               Environmentally conscious architecture that positively impacts communities
             </p>
           </div>
           <div>
-            <h4 className="font-display text-charcoal mb-3">Cultural Resonance</h4>
-            <p className="text-sm text-charcoal/70 font-sans">
+            <h4 className="text-charcoal mb-3">Cultural Resonance</h4>
+            <p className="text-sm text-charcoal/70">
               Designs that honor Nigerian heritage while embracing innovative technology
             </p>
           </div>

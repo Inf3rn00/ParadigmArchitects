@@ -11,7 +11,7 @@ export function AboutHero() {
         <div className="fade-in flex flex-col lg:flex-row lg:justify-between lg:items-start gap-12">
           {/* Heading Section */}
           <div className="lg:flex-1">
-            <h1 className="mb-8 text-5xl lg:text-6xl font-display font-light leading-tight tracking-tight">
+            <h1 className="mb-8 text-5xl lg:text-6xl font-light leading-tight tracking-tight">
               <span className="block">Grounded in</span>
               <span className="block text-copper mt-2">Professionalism.</span>
               <span className="block mt-4">Driven by</span>
@@ -22,7 +22,7 @@ export function AboutHero() {
 
           {/* Paragraph Section */}
           <div className="lg:flex-1 lg:max-w-2xl">
-            <p className="text-xl lg:text-2xl text-concrete leading-relaxed font-sans font-light">
+            <p className="text-xl lg:text-2xl text-concrete leading-relaxed font-light">
               For over two decades, Paradigm Architects has been at the
               forefront of architectural innovation, transforming bold visions
               into enduring realities. Our commitment to excellence,
@@ -37,10 +37,10 @@ export function AboutHero() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-24 fade-in">
           <div className="group">
             <div className="border-l-2 border-copper pl-8 py-2 transition-all duration-300 group-hover:border-copper-light group-hover:pl-10">
-              <h5 className="text-copper font-display text-lg font-medium mb-4 tracking-wider group-hover:text-copper-light transition-colors duration-300">
+              <h5 className="text-copper text-lg font-medium mb-4 tracking-wider group-hover:text-copper-light transition-colors duration-300">
                 OUR VISION
               </h5>
-              <p className="text-concrete leading-relaxed font-sans text-base">
+              <p className="text-concrete leading-relaxed text-base">
                 To redefine architectural excellence globally, creating spaces
                 that inspire and endure through innovative, minimalist designs
                 that prioritize sustainability and user needs.
@@ -50,10 +50,10 @@ export function AboutHero() {
 
           <div className="group">
             <div className="border-l-2 border-copper pl-8 py-2 transition-all duration-300 group-hover:border-copper-light group-hover:pl-10">
-              <h5 className="text-copper font-display text-lg font-medium mb-4 tracking-wider group-hover:text-copper-light transition-colors duration-300">
+              <h5 className="text-copper text-lg font-medium mb-4 tracking-wider group-hover:text-copper-light transition-colors duration-300">
                 OUR APPROACH
               </h5>
-              <p className="text-concrete leading-relaxed font-sans text-base">
+              <p className="text-concrete leading-relaxed text-base">
                 Blending cutting-edge technology with deep cultural respect, we
                 craft solutions that honor heritage while embracing the future
                 through collaborative, user-centric design.
@@ -63,10 +63,10 @@ export function AboutHero() {
 
           <div className="group">
             <div className="border-l-2 border-copper pl-8 py-2 transition-all duration-300 group-hover:border-copper-light group-hover:pl-10">
-              <h5 className="text-copper font-display text-lg font-medium mb-4 tracking-wider group-hover:text-copper-light transition-colors duration-300">
+              <h5 className="text-copper text-lg font-medium mb-4 tracking-wider group-hover:text-copper-light transition-colors duration-300">
                 OUR IMPACT
               </h5>
-              <p className="text-concrete leading-relaxed font-sans text-base">
+              <p className="text-concrete leading-relaxed text-base">
                 Transforming Nigerian communities through sustainable,
                 culturally-responsive design that stands the test of time and
                 leaves a lasting legacy of excellence.

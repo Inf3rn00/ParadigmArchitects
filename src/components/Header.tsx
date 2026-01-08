@@ -22,7 +22,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-concrete backdrop-blur-sm bg-white/95">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */} 
+          {/* Logo */}
           <Link
             to="/"
             onClick={() => setMobileMenuOpen(false)}
@@ -31,8 +31,8 @@ export function Header() {
             <div className="w-10 h-10 bg-charcoal flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <img src="./logo.jpg" alt="" />
             </div>
-            <span className="tracking-tight text-charcoal font-display font-semibold text-lg group-hover:text-copper transition-colors duration-300">
-              THE PARADIGM ARCHITECTS
+            <span className="tracking-tight text-charcoal font-semibold text-lg group-hover:text-copper transition-colors duration-300">
+              <span className='mr-2 font-ginora'>the</span> <span className="tracking-[.3em] text-lg font-abster">PARADIGM</span> <p className="font-light tracking-[.5em] font-ginora">ARCHITECTS</p>
             </span>
           </Link>
 
