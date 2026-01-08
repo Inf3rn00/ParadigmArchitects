@@ -17,7 +17,7 @@ export function Footer() {
           {/* Brand */}
           <div className="fade-in">
             <div className="flex items-center gap-3 mb-6 group">
-              <div className="w-10 h-10 bg-white flex items-center justify-center transition-transform duration-300 group-hover:scale-105 rounded-lg border border-concrete shadow-lg">
+              <div className="w-10 h-10 bg-offwhite flex items-center justify-center transition-transform duration-300 group-hover:scale-105 rounded-lg border border-concrete shadow-lg">
                 <img
                   src="./logo.jpg"
                   alt="Paradigm Architects Logo"

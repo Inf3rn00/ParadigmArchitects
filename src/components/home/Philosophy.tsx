@@ -19,17 +19,17 @@ export function Philosophy() {
     },
   ];
 
-  
+
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-offwhite">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-20 fade-in">
           <h2 className="text-charcoal mb-6 text-4xl md:text-5xl font-light tracking-tight">
             The Paradigm Philosophy
           </h2>
           <div className="w-24 h-0.5 bg-copper mx-auto mb-6"></div>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-charcoal/60 text-lg max-w-2xl mx-auto leading-relaxed">
             Three core principles that guide every project we undertake
           </p>
         </div>
@@ -40,7 +40,7 @@ export function Philosophy() {
             return (
               <div
                 key={pillar.title}
-                className="group p-12 bg-white hover:bg-offwhite border border-concrete rounded-lg transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl focus-within:scale-105 focus-within:shadow-xl focus-within:outline-none focus-within:ring-2 focus-within:ring-copper focus-within:ring-offset-2"
+                className="group p-12 bg-offwhite hover:bg-offwhite border border-concrete rounded-lg transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl focus-within:scale-105 focus-within:shadow-xl focus-within:outline-none focus-within:ring-2 focus-within:ring-copper focus-within:ring-offset-2"
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 flex items-center justify-center mb-8 bg-copper/10 rounded-full group-hover:bg-copper/20 group-hover:scale-110 transition-all duration-300">
@@ -53,7 +53,7 @@ export function Philosophy() {
                   <h4 className="text-charcoal mb-6 text-2xl font-semibold tracking-tight group-hover:text-copper transition-colors duration-300">
                     {pillar.title}
                   </h4>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-charcoal/60 leading-relaxed text-lg">
                     {pillar.description}
                   </p>
                 </div>

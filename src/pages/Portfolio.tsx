@@ -14,7 +14,7 @@ export function Portfolio() {
                     </p>
                 </div>
             </section>
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-offwhite">
                 <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
                     <PortfolioGrid />
                 </div>

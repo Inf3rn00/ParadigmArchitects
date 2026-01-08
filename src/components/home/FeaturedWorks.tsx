@@ -77,7 +77,7 @@ export function FeaturedWorks() {
             <h2 className="text-charcoal mb-4 text-4xl lg:text-5xl font-bold tracking-tight">
               Featured Works
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl leading-relaxed">
+            <p className="text-charcoal/60 text-lg max-w-2xl leading-relaxed">
               Showcasing excellence in architectural design
             </p>
           </div>
@@ -98,7 +98,7 @@ export function FeaturedWorks() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className={`group relative overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 ease-out hover:scale-[1.02] focus-within:scale-[1.02] focus-within:shadow-2xl focus-within:outline-none focus-within:ring-2 focus-within:ring-copper focus-within:ring-offset-2 ${project.height === "tall" ? "md:row-span-2" : ""
+              className={`group relative overflow-hidden bg-offwhite rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 ease-out hover:scale-[1.02] focus-within:scale-[1.02] focus-within:shadow-2xl focus-within:outline-none focus-within:ring-2 focus-within:ring-copper focus-within:ring-offset-2 ${project.height === "tall" ? "md:row-span-2" : ""
                 }`}
             >
               <div

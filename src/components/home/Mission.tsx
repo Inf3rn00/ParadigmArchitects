@@ -3,11 +3,11 @@ export function Mission() {
     <section className="py-24 bg-silver">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto fade-in">
-          <div className="bg-white p-12 lg:p-16 border-l-4 border-copper rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
+          <div className="bg-offwhite p-12 lg:p-16 border-l-4 border-copper rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
             <h3 className="text-charcoal mb-8 text-3xl lg:text-4xl font-bold tracking-tight">
               Our Mission
             </h3>
-            <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
+            <div className="space-y-6 text-charcoal/70 leading-relaxed text-lg">
               <p className="opacity-90">
                 We do not merely build spaces; we cultivate legacies that stand the test of time.
                 Our approach transcends conventional architectural practice, weaving together innovation,
@@ -31,13 +31,13 @@ export function Mission() {
                 <div className="text-copper mb-3 text-4xl lg:text-5xl font-bold tracking-tight group-hover:text-copper-light transition-colors duration-300">
                   10+
                 </div>
-                <p className="text-gray-600 tracking-wide font-medium">Projects Completed</p>
+                <p className="text-charcoal/60 tracking-wide font-medium">Projects Completed</p>
               </div>
               <div className="text-center group hover:scale-105 transition-transform duration-300">
                 <div className="text-copper mb-3 text-4xl lg:text-5xl font-bold tracking-tight group-hover:text-copper-light transition-colors duration-300">
                   5+
                 </div>
-                <p className="text-gray-600 tracking-wide font-medium">Years Experience</p>
+                <p className="text-charcoal/60 tracking-wide font-medium">Years Experience</p>
               </div>
 
             </div>

@@ -91,7 +91,7 @@ export function ContactSection() {
             </div>
 
             {/* Office Hours */}
-            <div className="mt-12 p-8 bg-white rounded-sm border border-concrete fade-in">
+            <div className="mt-12 p-8 bg-offwhite rounded-sm border border-concrete fade-in">
               <h6 className="text-charcoal text-lg mb-4">Business Hours</h6>
               <div className="space-y-3 text-charcoal/70">
                 <div className="flex justify-between items-center py-2 border-b border-concrete/50">
@@ -110,7 +110,7 @@ export function ContactSection() {
             </div>
 
             {/* Service Areas */}
-            <div className="mt-8 p-8 bg-white rounded-sm border border-concrete fade-in">
+            <div className="mt-8 p-8 bg-offwhite rounded-sm border border-concrete fade-in">
               <h6 className="text-charcoal text-lg mb-4">Service Areas</h6>
               <div className="grid grid-cols-2 gap-2 text-sm text-charcoal/70">
                 <div className="flex items-center gap-2">
@@ -155,7 +155,7 @@ export function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-white"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-offwhite"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -171,7 +171,7 @@ export function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-white"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-offwhite"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -186,7 +186,7 @@ export function ContactSection() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-white"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-offwhite"
                   placeholder="Your company name (optional)"
                 />
               </div>
@@ -200,7 +200,7 @@ export function ContactSection() {
                   name="projectType"
                   value={formData.projectType}
                   onChange={handleChange}
-                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-white"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-offwhite"
                 >
                   <option value="">Select your project type</option>
                   <option value="sustainable">Sustainable Design</option>
@@ -223,7 +223,7 @@ export function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-white resize-none"
+                  className="w-full px-4 py-4 border border-concrete focus:border-copper focus:outline-none transition-colors duration-300 bg-offwhite resize-none"
                   placeholder="Tell us about your project vision, requirements, timeline, and any specific needs..."
                 ></textarea>
               </div>

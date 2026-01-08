@@ -11,7 +11,7 @@ export function GlobalReach() {
   ];
 
   return (
-    <section className="py-24 bg-linear-to-br from-white to-gray-50/30">
+    <section className="py-24 bg-offwhite">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         {/* Header Section */}
         <div className="text-center mb-20">
@@ -22,7 +22,7 @@ export function GlobalReach() {
           <h2 className="text-4xl lg:text-5xl font-light text-charcoal mb-6 leading-tight">
             Nationwide <span className="font-semibold">Reach</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-charcoal/60 max-w-2xl mx-auto text-lg leading-relaxed">
             Operating across the country, we bring architectural excellence to
             communities everywhere, transforming skylines and enriching lives
             through innovative design.
@@ -34,14 +34,14 @@ export function GlobalReach() {
           {locations.map((location, index) => (
             <div
               key={`${location.city}-${location.country}`}
-              className="group relative p-8 bg-white rounded-2xl border border-gray-100 hover:border-[var(--color-copper)]/20 transition-all duration-500 hover:shadow-2xl hover:shadow-[var(--color-copper)]/5 hover:-translate-y-2"
+              className="group relative p-8 bg-offwhite rounded-2xl border border-gray-100 hover:border-[var(--color-copper)]/20 transition-all duration-500 hover:shadow-2xl hover:shadow-[var(--color-copper)]/5 hover:-translate-y-2"
               style={{
                 animationDelay: `${index * 100}ms`,
                 animation: "fadeInUp 0.6s ease-out forwards",
               }}
             >
               {/* Background Gradient Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white to-gray-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-offwhite to-gray-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative flex items-start gap-6">
                 {/* Icon Container */}
@@ -62,14 +62,14 @@ export function GlobalReach() {
                     <h5 className="text-xl font-semibold text-[var(--color-charcoal)] group-hover:text-[var(--color-copper)] transition-colors duration-300">
                       {location.city}
                     </h5>
-                    <span className="text-xs text-gray-400 font-medium px-2 py-1 bg-gray-100 rounded-full">
+                    <span className="text-xs text-charcoal/40 font-medium px-2 py-1 bg-gray-100 rounded-full">
                       {location.country}
                     </span>
                   </div>
                   <p className="text-2xl font-bold text-[var(--color-copper)] mb-1">
                     {location.projects}
                   </p>
-                  <p className="text-sm text-gray-500 font-medium">
+                  <p className="text-sm text-charcoal/50 font-medium">
                     {location.projects === 1
                       ? "Completed Project"
                       : "Completed Projects"}
@@ -86,7 +86,7 @@ export function GlobalReach() {
         {/* Stats Footer */}
         <div className="text-center">
           {/* CTA Badge */}
-          <div className="mt-12 inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--color-copper)]/20 bg-white/50 backdrop-blur-sm rounded-full group hover:border-[var(--color-copper)] hover:bg-[var(--color-copper)]/5 transition-all duration-300">
+          <div className="mt-12 inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--color-copper)]/20 bg-offwhite/50 backdrop-blur-sm rounded-full group hover:border-[var(--color-copper)] hover:bg-[var(--color-copper)]/5 transition-all duration-300">
             <div className="w-2 h-2 bg-[var(--color-copper)] rounded-full animate-pulse"></div>
             <span className="text-[var(--color-charcoal)] font-semibold tracking-wide group-hover:text-[var(--color-copper)] transition-colors duration-300">
               Nationwide & International Presence

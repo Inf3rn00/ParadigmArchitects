@@ -113,7 +113,7 @@ export function PortfolioGrid() {
             onClick={() => setActiveFilter(filter)}
             className={`px-6 py-3 tracking-wide transition-all duration-300 ease-out rounded-sm ${activeFilter === filter
               ? "bg-charcoal text-offwhite shadow-md"
-              : "bg-offwhite text-charcoal border border-concrete hover:border-charcoal hover:bg-white"
+              : "bg-offwhite text-charcoal border border-concrete hover:border-charcoal hover:bg-offwhite"
               }`}
           >
             {filter}

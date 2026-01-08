@@ -74,7 +74,7 @@ export function Team() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group bg-white rounded-sm shadow-sm hover:shadow-xl transition-all duration-500 fade-in overflow-hidden"
+              className="group bg-offwhite rounded-sm shadow-sm hover:shadow-xl transition-all duration-500 fade-in overflow-hidden"
             >
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden bg-concrete">

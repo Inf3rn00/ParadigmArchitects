@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-@theme{
-  --color-charcoal: #383736;
-  --color-copper: #9E7B63;
+@theme {
+  --color-charcoal: #3d3d3d;
+  /* Fuscous Gray */
+  --color-copper: #9f7556;
+  /* Leather */
   --color-copper-light: #B08D74;
-  --color-silver: #C9C9C9;
+  --color-silver: #c6c6c5;
+  /* Grey Nickel */
   --color-concrete: #E5E5E5;
-  --color-offwhite: #F9F9F9;
+  --color-offwhite: #F8F7F4;
+  /* Updated Soft White shade */
+  /* Soft White */
+
+  /* Aliases as requested */
+  --color-grey-nickel: #c6c6c5;
+  --color-leather: #9f7556;
+  --color-pine-cone: #6c5a4c;
+  --color-fuscous-gray: #3d3d3d;
+  --color-soft-white: #F8F7F4;
 
   --font-sans: "Inter", "Helvetica Neue", sans-serif;
   --font-display: "Montserrat", "Arial", sans-serif;
@@ -30,12 +42,12 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #383736;
+  background: #3d3d3d;
 }
 
 body {
-  background-color: #F9F9F9;
-  color: #383736;
+  background-color: #F8F7F4;
+  color: #3d3d3d;
   font-family: "centurygothic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
